@@ -1,0 +1,32 @@
+
+GET http://localhost:5000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzUxMzM4NTIsImV4cCI6MTY3NTEzMzg2NywiYXVkIjoiNjNkODdiM2Y3MDQ2MmZkMTA3MTQzMjNhIiwiaXNzIjoibmFuYUNvZGVzLmNvbSJ9.4AQwUkmBMcNzSPwt_332ObkxkC_qCV3nVZRHdOi9Oks
+
+###Login Route
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "email": "Be123@gmail.com",
+    "password": "12345"
+}
+
+###Register Route
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "email": "Bez123@gmail.com",
+    "password": "12345"
+}
+
+###Refresh Token Route
+POST http://localhost:5000/auth/refresh-token
+
+###Logout Route
+DELETE  http://localhost:5000/auth/logout
+
+
+
+
+
